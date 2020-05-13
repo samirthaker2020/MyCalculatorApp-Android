@@ -8,13 +8,14 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edittext_result"
         android:layout_width="387dp"
         android:layout_height="110dp"
         android:layout_marginTop="24dp"
         android:autofillHints=""
         android:background="@android:color/background_light"
         android:ems="10"
+        android:enabled="false"
         android:gravity="bottom|right"
         android:inputType="numberDecimal"
         android:textSize="36sp"
