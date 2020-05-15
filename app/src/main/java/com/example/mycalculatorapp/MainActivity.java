@@ -55,12 +55,13 @@ boolean add,subtract,multiply,divide;
         btnSubtract=(Button) findViewById(R.id.btnSubtract);
         btnMultiply=(Button) findViewById(R.id.btnMultiply);
         btnDivide=(Button) findViewById(R.id.btnDivide);
+        editResult=(EditText) findViewById(R.id.editText_Result);
 
         // button 0 click listener
         btn0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editResult.setText(editResult.getText()+"0");
             }
         });
         // button 1 click listener
