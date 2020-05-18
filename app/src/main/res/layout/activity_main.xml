@@ -16,19 +16,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
+        <TextView
             android:id="@+id/editText_Result"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/cardview_light_background"
-            android:ems="10"
-            android:enabled="false"
-            android:gravity="bottom|center|right"
-            android:inputType="numberDecimal"
-            android:lines="3"
-            android:singleLine="false"
-            android:textAlignment="gravity"
-            android:textSize="70dp" />
+            android:background="@color/myWhite"
+            android:gravity="bottom|right"
+            android:lines="4"
+            android:maxLines="5"
+            android:textSize="36sp" />
     </FrameLayout>
 
     <FrameLayout

@@ -7,11 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     // variable declaration
-EditText editResult;
+TextView editResult;
 Button btnEqual;
 Button btn1;
 Button btn2;
@@ -55,7 +56,7 @@ boolean add,subtract,multiply,divide;
         btnSubtract=(Button) findViewById(R.id.btnSubtract);
         btnMultiply=(Button) findViewById(R.id.btnMultiply);
         btnDivide=(Button) findViewById(R.id.btnDivide);
-        editResult=(EditText) findViewById(R.id.editText_Result);
+        editResult=(TextView) findViewById(R.id.editText_Result);
 
         // button 0 click listener
         btn0.setOnClickListener(new View.OnClickListener() {
@@ -68,91 +69,97 @@ boolean add,subtract,multiply,divide;
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editResult.setText(editResult.getText()+"1");
             }
         });
         // button 2 click listener
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editResult.setText(editResult.getText()+"2");
             }
         });
         // button 3 click listener
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editResult.setText(editResult.getText()+"3");
             }
         });
         // button 4 click listener
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editResult.setText(editResult.getText()+"4");
             }
         });
         // button 5 click listener
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editResult.setText(editResult.getText()+"5");
             }
         });
         // button 6 click listener
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editResult.setText(editResult.getText()+"6");
             }
         });
         // button 7 click listener
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editResult.setText(editResult.getText()+"7");
             }
         });
         // button 8 click listener
         btn8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editResult.setText(editResult.getText()+"8");
             }
         });
         // button 9 click listener
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editResult.setText(editResult.getText()+"9");
             }
         });
         // button add click listener
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editResult.setText(editResult.getText()+"+");
             }
         });
         // button subtract click listener
         btnSubtract.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editResult.setText(editResult.getText()+"-");
             }
         });
         // button multiply click listener
         btnMultiply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editResult.setText(editResult.getText()+"*");
             }
         });
         // button divide click listener
         btnDivide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editResult.setText(editResult.getText()+"/");
+            }
+        });
+        btnPoint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editResult.setText(editResult.getText()+".");
             }
         });
         // button equal click listener
